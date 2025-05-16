@@ -3,21 +3,29 @@
 SEQUEL Structured English Query Language
 
 - Data  
-- How to organinze data efficiently  
+- How to organinze data efficiently (space, speed)
 
-Table is the building block.
-
+**Table** is the **building block**.
 - row ~ record  
 - column ~ field  
 
 ## Naming convention  
-
+- Table: students, products (plural noun)  
+- Column: 
 
 ## Data types
-
+- CHAR  
+- VARCHAR
+- TEXT
+- INT  
+- BOOL  
+- DATE  
+- TIME  
+- DATETIME  
+- TIMESTAMP  
 
 CRUD
-Cread
+Create
 Read
 Update
 Delete
@@ -42,6 +50,27 @@ SELECT first_name, last_name FROM patients
 WHERE gender == 'M'
 */
 ```
+
+```sql
+-- CREATE
+CREATE TABLE professors (
+   firstname text,
+   lastname text
+);
+
+-- READ
+SELECT * FROM professors;
+SELECT firstname, lastname FROM professors;
+
+-- UPDATE
+ALTER TABLE professors
+ADD COLUMN university_shortname text; 
+
+-- DELETE
+DROP TABLE professors;
+
+```
+
 
 ## SELECT
 ```sql
