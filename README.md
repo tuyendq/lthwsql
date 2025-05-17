@@ -66,6 +66,12 @@ SELECT firstname, lastname FROM professors;
 ALTER TABLE professors
 ADD COLUMN university_shortname text; 
 
+ALTER TABLE professors
+RENAME COLUMN university_short; 
+
+ALTER TABLE professors
+DROP COLUMN university_short; 
+
 -- DELETE
 DROP TABLE professors;
 
